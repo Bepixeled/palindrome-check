@@ -23,11 +23,15 @@ function isValid(e) {
 
 } 
 
+function reset() {
+    input.value = '':
+}
+
 button.addEventListener('click', isValid);
 
 input.addEventListener('keyup', function (e) {
     if (e.key === 'Enter') {
         isValid();
-        input.value = '':
+        reset();
     }
 });
