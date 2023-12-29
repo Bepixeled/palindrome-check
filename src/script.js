@@ -24,7 +24,7 @@ function isValid(e) {
 } 
 
 function reset() {
-    input.value = '':
+    input.value = '';
 }
 
 button.addEventListener('click', isValid);
