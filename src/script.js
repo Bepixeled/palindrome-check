@@ -7,7 +7,7 @@ const regex = (/[^a-zA-Z0-9]/g, '')
 function isValid(e) {
     const para = document.querySelector('#result');
     if (input.value === '') {
-        alert('Please enter a value');
+       // alert('Please enter a value');
         return;
     } else {
         const inputValue = input.value.toLowerCase();
@@ -21,9 +21,13 @@ function isValid(e) {
         console.log(reverseValue);
     }
 
-} button.addEventListener('click', isValid);
+} 
+
+button.addEventListener('click', isValid);
+
 input.addEventListener('keyup', function (e) {
     if (e.key === 'Enter') {
         isValid();
+        input.value = '':
     }
 });
